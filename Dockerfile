@@ -14,8 +14,8 @@ RUN sudo apt-get update && sudo apt-get install unzip -y
 RUN curl https://rclone.org/install.sh | sudo bash
 
 # Install Node.js
-RUN curl -fsSL https://deb.nodesource.com/setup_17.x | bash - \
-    && apt-get install -y nodejs
+RUN curl -fsSL https://deb.nodesource.com/setup_17.x | sudo bash - \
+    && sudo apt-get install -y nodejs
 
 # Copy rclone tasks to /tmp, to potentially be used
 COPY deploy-container/rclone-tasks.json /tmp/rclone-tasks.json
