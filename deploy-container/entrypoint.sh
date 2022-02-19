@@ -97,4 +97,4 @@ fi
 
 echo "[$PREFIX] Starting code-server..."
 # Now we can run code-server with the default entrypoint
-/usr/bin/entrypoint.sh --bind-addr 0.0.0.0:5810 $START_DIR
+/usr/bin/entrypoint.sh --bind-addr 0.0.0.0:5806 $START_DIR
